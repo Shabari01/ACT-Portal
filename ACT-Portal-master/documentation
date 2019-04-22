@@ -1,0 +1,36 @@
+1.change value accordingly
+
+		C:\wamp\bin\apache\apache2.2.6\bin\php.ini 
+			post_max_size = 750M
+			upload_max_filesize = 750M
+			max_execution_time = 5000
+			max_input_time = 5000
+			memory_limit = 1000M 
+
+		C:\wamp\bin\mysql\mysql5.0.45\my.ini:
+			max_allowed_packet = 200M 
+
+
+2.send mail function to be changed accorndingly in php.ini file
+		[mail function]
+
+			SMTP = localhost
+			smtp_port = 25
+			sendmail_from = //Your mail id
+			sendmail_path ="C:\wamp\sendmail\sendmail.exe -t -i"
+
+
+3.file path C:\wamp\sendmail\sendmail.ini file will be changed to
+
+		smtp_server=smtp.gmail.com
+		smtp_port=465
+		smtp_ssl=ssl
+		default_domain=localhost
+		error_logfile=error.log
+		auth_username=//your mail id 
+		auth_password=//your mail id password
+		force_sender=//your mail id
+		hostname=localhost
+
+4.thumb image,
+
